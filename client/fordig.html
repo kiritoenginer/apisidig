@@ -1,0 +1,17 @@
+<template name="fordig">
+    <div class="panelStyles">
+		<div class="panel panel-info">
+		    <div class="panel-heading">
+			    <h3 class="panel-title">Planilla</h3>
+		    </div>
+                <a class="btn btn-primary" href="/dig">
+                    volver a la lista de digitalizaciones
+                </a>
+		        <div class="panel-body">
+                     {{>uploadForm}}
+                     {{> quickForm collection="Dig" id="insertDigForm" type="insert"}}
+                   
+			    </div>
+		</div>	
+	</div>
+</template>

@@ -1,0 +1,18 @@
+<template name="UnidadM">
+  	<div class="panelStyles">
+		<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">registro</h3>
+		</div>
+		<div class="panel-body">
+                {{#autoForm collection="UnidadM" id="insertUnidadMForm" type="insert"}}
+                    <fieldset>
+                    <legend>formulario de registro de Unidades mayores</legend>
+                        {{> afQuickField name='UnidadM'}}
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">registrar unidad</button>
+                {{/autoForm}}
+			</div>
+		</div>	
+	</div>	    
+</template>

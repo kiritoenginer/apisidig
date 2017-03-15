@@ -1,0 +1,20 @@
+<template name="facultad">
+	<div class="panelStyles">
+		<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">registro</h3>
+		</div>
+		<div class="panel-body">
+			{{#autoForm collection="Facultad" id="insertFacultadForm" type="insert"}}
+                <fieldset>
+                    <legend>formulario de registro de facultades</legend>
+                        {{> afQuickField name='Facultad'}}
+                </fieldset>
+                <button type="submit" class="btn btn-primary">registrar De Facultades</button>
+            {{/autoForm}}
+			</div>
+		</div>	
+	</div>	
+    
+
+</template>

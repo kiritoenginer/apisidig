@@ -1,0 +1,83 @@
+<template name="mainLayout">
+  <head>
+  <title>mysidig</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #DAF8FB;">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">SIDIG</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/dig">Digitalizacion de Planilla</a></li>
+            <li><a href="#">Enviar Documentos</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seccion Registros <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/User">Registro de Usuarios</a></li>
+                <li><a href="/carrera">Registro de Carreras</a></li>
+                <li><a href="/facultad">Registro de Facultad</a></li>
+                <li><a href="/unidadM">Registro de Unidades Mayores</a></li>
+                <li><a href="/UnidadD">Registro de Unidades Dependientes</a></li>
+              </ul>
+            </li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seccion Reportes <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Reporte de Usuarios</a></li>
+                <li><a href="#">Reporte de Carreras</a></li>
+                <li><a href="#">Reporte de Facultad</a></li>
+                <li><a href="#">Reporte de Digitalizaciones</a></li>
+                <li><a href="#">Reporte de Errores</a></li>
+                <li><a href="#">Reporte de Unidades Mayores</a></li>
+                <li><a href="#">Reporte de Unidades Dependientes</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+
+          <ul class="nav navbar-nav navbar-right">
+          <li role="presentation"><a href="#">Alertas de Documentos recibidos <span class="badge">3</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">user <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div class="container">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">logear</button>
+                </form>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+
+    </nav>
+</body>
+	<main>
+	<div class="background">
+		{{>Template.dynamic template=main}}
+	</div>
+	</main>
+
+
+</template>

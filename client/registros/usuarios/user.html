@@ -1,0 +1,27 @@
+<template name="User">
+  	<div class="panelStyles">
+		<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">registro</h3>
+		</div>
+		<div class="panel-body">
+                {{#autoForm collection="Usuario" id="insertUsuarioForm" type="insert"}}
+                <fieldset>
+                <legend>formualrio de registro</legend>
+                {{> afQuickField name='Nombre'}}
+                {{> afQuickField name='ApellidoP'}}
+                {{> afQuickField name='ApellidoM'}}
+                {{> afQuickField name='genero'}}
+                {{> afQuickField name='Telefono'}}
+                {{> afQuickField name='rol'}}
+                {{> afQuickField name='borrowedBy.$.email'}}
+                {{> afQuickField name='username'}}
+                {{> afQuickField name='password'}}
+
+                </fieldset>
+                <button type="submit" class="btn btn-primary">registrar Usuario</button>
+                {{/autoForm}}
+			</div>
+		</div>	
+	</div>
+</template>
